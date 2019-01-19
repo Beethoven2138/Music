@@ -1,3 +1,5 @@
+/* Creates a 12 tone matrix for serial compositions */
+
 #include <stdlib.h>
 #include <stdio.h>
 
