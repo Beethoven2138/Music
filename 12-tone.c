@@ -7,8 +7,8 @@ int main(int argc, char **argv)
         int grid[12*12];
 	if (argc > 1)
 	{
-		for (int i = 1; i <= 12; ++i)
-			grid[i] = atoi(argv[i]);
+		for (int i = 0; i < 12; ++i)
+			grid[i] = atoi(argv[i+1]);
 	}
 	else
 		exit(-1);
