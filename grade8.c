@@ -16,56 +16,58 @@ int main(void)
 {
 	srand(time(NULL));
 	int r = rand();
+	int s = rand();
+	int t = rand();
 	switch (r % 10)
 	{
 	case 0:
 	{
-		printf("%s similar motion %s\n", keys[r%12], type[r%2]);
+		printf("%s similar motion %s\n", keys[s%12], type[t%2]);
 		break;
 	};
 	case 1:
 	{
-		printf("%s contrary motion %s\n", keys[r%12], type[r%2]);
+		printf("%s contrary motion %s\n", keys[s%12], type[t%2]);
 		break;
 	};
 	case 2:
 	{
-		printf("%s sixth apart %s\n", keys[r%12], type[r%2]);
+		printf("%s sixth apart %s\n", keys[s%12], type[t%2]);
 		break;
 	};
 	case 3:
 	{
-		printf("E-flat major thirds legato %s\n", hand[r%2]);
+		printf("E-flat major thirds legato %s\n", hand[s%2]);
 		break;
 	};
 	case 4:
 	{
-		printf("C major sixth apart staccato %s\n", hand[r%2]);
+		printf("C major sixth apart staccato %s\n", hand[s%2]);
 		break;
 	};
 	case 5:
 	{
-		printf("C and E-flat chromatic sixth apart %s\n", type[r%2]);
+		printf("C and E-flat chromatic sixth apart %s\n", type[s%2]);
 		break;
 	};
 	case 6:
 	{
-		printf("%s whole-tone %s\n", whole[r%2], type[r%2]);
+		printf("%s whole-tone %s\n", whole[s%2], type[s%2]);
 		break;
 	};
 	case 7:
 	{
-		printf("%s arpeggio second inversion\n", arp[r%8]);
+		printf("%s arpeggio second inversion\n", arp[s%8]);
 		break;
 	};
 	case 8:
 	{
-		printf("dominant seventh in %s\n", dom[r%4]);
+		printf("dominant seventh in %s\n", dom[s%4]);
 		break;
 	};
 	case 9:
 	{
-		printf("%s diminished seventh\n", whole[r%2]);
+		printf("%s diminished seventh\n", whole[s%2]);
 		break;
 	};
 	}
